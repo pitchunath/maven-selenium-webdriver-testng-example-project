@@ -34,15 +34,15 @@ public void testgooglrsearch() throws MalformedURLException{
 RemoteWebDriver driver = new RemoteWebDriver(new URL("http://40.117.249.151:4444/wd/hub"),new FirefoxOptions());
 driver.get("http://www.google.com");
 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-driver.findElement(By.name("q")).sendKeys("Selenium");
+driver.findElement(By.name("q")).sendKeys("pitchu");
 String name = driver.findElement(By.name("q")).getAttribute("name");
-System.out.println("This is taking from browser : "+name);
+System.out.println("the attribute name value of search tab : "+name);
 //System.out.println(driver.getTitle());
 //Assert.assertEquals("Only Testing");
 //Assert.assertEquals("testing","testing");
 //we expect the title “Google “ should be present 
 //String Expectedtitle = "Google";
-System.out.println("Before Running HIIIIIIIIIIIIIIIIIIIIIIIIIII");
+System.out.println("Testcase run");
 	 
 //it will fetch the actual title 
 //String Actualtitle = driver.getCurrentUrl();
